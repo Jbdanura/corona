@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'stats/style.css' %}">
+	</head>
+	<body>
+		<h2>Coronavirus - Estadísticas</h2>
+		<div class="mundo">
+			<h1>Mundo</h1>
+			<p class="infectados">Infectados totales: <p class="num">{{data.0.0}}</p></p>
+			<p class="muertos">Muertos totales: <p class="num">{{data.0.1}}</p></p>
+			<p class="recuperados">Recuperados totales: <p class="num">{{data.0.2}}</p></p>
+			<p class="mortalidad">Tasa de mortalidad: <p class="num">{{data.0.3}}%</p></p>
+		</div>
+		<div class="paises">
+			<h1>Países</h1>
+			{% for pais in data.1 %}
+				<div class="pais">
+					<p class="nombre">{{pais.0}}</p>
+					<br>
+					<p class="infectados">Infectados totales: <p class="num">{{pais.1}}</p></p>
+					<p class="muertos">Muertos totales: <p class="num">{{pais.2}}</p></p>
+					<p class="recuperados">Recuperados totales: <p class="num">{{pais.3}}</p></p>
+					<p class="mortalidad">Tasa de mortalidad: <p class="num">{{pais.4}}%</p></p>
+				</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>

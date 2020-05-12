@@ -1,0 +1,83 @@
+html {
+	background-color: black;
+}
+
+div {
+	background-color: #333333;
+}
+
+h1{
+	color: #F2F3F4;
+	font-size: 40px;
+	font-family: "Verdana";
+}
+
+h2 {
+	color: #F4F6F6;
+	font-size: 50px;
+	text-align: center;
+}
+
+.mundo {
+	width: 30%;
+	margin: 0 auto;
+	border-radius: 2%;
+	padding-left: 1%;
+	font-size: 20px;
+	color: #E5E7E9;
+}
+
+.mundo h1 {
+	text-align: center;
+}
+
+.mundo .num {
+	color: red;
+	margin-left: 1%;
+	margin-right: 10%;
+}
+
+.mundo p {
+	display: inline-block;
+}
+
+.paises{
+	width: 95%;
+	border-radius: 0%;
+	margin: 0 auto;
+	padding-left: 0.5%;
+	font-size: 17px;
+}
+
+.paises h1{
+	text-align: center;
+}
+
+.pais {
+	display: inline-block;
+	width: 47%;
+	border: solid black 3px;
+	margin-bottom: 0.5%;
+	margin-right: 0.5%;
+	padding: 0.5%;
+	background-color: #424949;
+}
+
+.pais p{
+	display: inline-block;
+	color: #E5E7E9;
+}
+
+
+
+.pais .num {
+	color: red;
+	margin-left: 5px;
+	margin-right: 20px;
+}
+
+.pais .nombre{
+	font-size: 30px;
+	color: white;
+	font-family: "Verdana";
+}
